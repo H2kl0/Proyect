@@ -30,13 +30,6 @@ Incluye: chatbots, web scraping, interfaces gráficas, analizadores de texto, si
 
 ---
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT.  
-Puedes ver los detalles [aquí](LICENSE).
-
----
-
 ## 🙌 Contribuciones
 
 ¡Siempre bienvenidas! Puedes:
@@ -50,9 +43,8 @@ Puedes ver los detalles [aquí](LICENSE).
 ## 💌 Contacto
 
 Si tienes dudas, sugerencias o quieres colaborar:
-- 👤 GitHub: [@tu_usuario]
-- 🐦 Twitter/X: [@tu_twitter]
-- 📧 Email: ejemplo@correo.com
+- 👤 GitHub: [@H2Kl0]
+- 📧 Email: Juanchibiris80@gmail.com
 
 ---
 
