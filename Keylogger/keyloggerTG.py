@@ -6,8 +6,8 @@ import requests
 import time
 
 # === CONFIGURACIÓN DE TELEGRAM ===
-TOKEN = "8071060049:AAHyeUBcPSiExTnh9RB1S-kJEV02ZdfciAY"  
-CHAT_ID = "6445066789"  
+TOKEN = "8071"  #colocar el token de tu bot
+CHAT_ID = "644"  #el numero de tu chat 
 # ================================
 
 buffer = ""  
