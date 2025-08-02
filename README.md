@@ -55,5 +55,4 @@ Python/
     ├── 📁 TestWork/
     │   ├── domin's.py
     │   └── Tree.py
-    ├── .gitignore
     └── README.md
