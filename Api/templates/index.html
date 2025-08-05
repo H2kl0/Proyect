@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Imágenes IA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #111;
+      color: #f1f1f1;
+    }
+
+    h1 {
+      color: #72e0ff;
+    }
+
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    img {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Generador de Imágenes con IA</h1>
+
+  <input type="text" id="prompt" placeholder="Escribe tu prompt aquí..." />
+  <button onclick="generar()">Generar Imagen</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    async function generar() {
+      const prompt = document.getElementById("prompt").value;
+
+      const response = await fetch("/generar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ prompt })
+      });
+
+      const data = await response.json();
+
+      const resultado = document.getElementById("resultado");
+      if (data.imagen_url) {
+        resultado.innerHTML = `<p>Resultado:</p><img src="${data.imagen_url}" alt="Imagen generada">`;
+      } else {
+        resultado.innerHTML = `<p style="color: red;">Error: ${JSON.stringify(data)}</p>`;
+      }
+    }
+  </script>
+
+</body>
+</html>

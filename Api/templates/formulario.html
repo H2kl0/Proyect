@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de Imágenes</title>
+</head>
+<body>
+    <h1>Generar Imagen con IA</h1>
+    <form method="post" action="/generar">
+        <label>Prompt:</label>
+        <input type="text" name="prompt" required>
+        <button type="submit">Generar</button>
+    </form>
+
+    {% if imagen %}
+        <h2>Resultado:</h2>
+        <img src="{{ imagen }}" alt="Imagen generada" width="512">
+    {% endif %}
+</body>
+</html>

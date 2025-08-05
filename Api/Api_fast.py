@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import replicate
 import os
 from dotenv import load_dotenv
-
+import requests
 load_dotenv()
 
 app = FastAPI()
@@ -20,3 +20,4 @@ def generar(p: Prompt):
     )
 
     return {"imagen_url": output[0]}
+
