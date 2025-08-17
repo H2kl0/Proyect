@@ -1,4 +1,4 @@
-
+------------------------------------------------------
 
 # Proyectos en Python 🐍  
 ### Desde lo básico hasta lo avanzado — ¡Bienvenido a mi viaje con Python!
